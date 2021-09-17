@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>task 7</title>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+      </head>
+
+<body>
+   <h2>Custom Event</h2>
+  <div id = "greeting1">
+         <input type = "text" v-on:keyup.enter = "showinputvalue" v-bind:style = "styleobj" placeholder = "Enter your name"/>
+         <h3> {{name}}</h3>
+      </div>
+
+<hr>
+<div id="globalComponent">
+<class-test1></class-test1>
+<class-test2></class-test2>
+{{message}}
+</div>
+
+<div id="localComponent">
+<class-test2></class-test2>
+<class-test1></class-test1>
+</div>
+        <hr>
+    <h2>Props</h2>
+     <div id="greeting2">
+        <greeting-container :greeting="greeting"></person-container>
+        </div> 
+<hr>
+<h2>Button using Slot</h2>
+<button type="submit">
+  <slot>Submit</slot>
+</button>
+<hr>
+</body>
+
+
+<script src="t7js.js"></script>
+</html>
